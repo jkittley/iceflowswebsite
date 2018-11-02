@@ -202,7 +202,6 @@ a.video-link p:hover {
 }
 
 #chars .tab-panes {
-  min-height: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
