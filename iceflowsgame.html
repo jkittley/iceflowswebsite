@@ -30,23 +30,68 @@
       background-color: black;
     }
     </style>
+
+     <!-- Cookie message -->
+     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+     <script>
+     window.addEventListener("load", function(){
+     window.cookieconsent.initialise({
+       "palette": {
+         "popup": {
+           "background": "#000"
+         },
+         "button": {
+           "background": "#f1d600"
+         }
+       },
+       "content": {
+         "message": "Our site uses cookies to help give you a better experience. By continuing to use it you consent to the use of cookies as set out in our ",
+         "dismiss": "Close",
+         "link": "privacy policy",
+         "href": "terms.html"
+       }
+     })});
+     </script>
+     
   </head>
 
   <body>
 
     <header class="text-center mb-4">
-      <img src="images/head.png" />
+      <a href="/">
+        <img src="images/head.png" />
+      </a>
     </header>
 
-    <div class="container d-flex h-100 justify-content-center">
-      <div class="row justify-content-center align-self-center">
-        <div class="w-100 text-center">
-          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
-        </div>
-        <div class="w-100 text-center">
-        <a href="#" onclick="SetFullscreen(1);" class="btn btn-primary m-4"><i class="fas fa-expand"></i> Play Full Screen</a>
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-auto">
+            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
         </div>
       </div>
+
+      <div class="row justify-content-center m-4">
+        <div class="col-md-4">
+            <a href="/" class="btn btn-secondary btn-block"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" onclick="SetFullscreen(1);" class="btn btn-primary btn-block"><i class="fas fa-expand"></i> Full Screen</a>
+        </div>
+      </div>
+      
+        <div id="row text-center justify-content-center">
+          <div class="col text-center">
+            <ul class="list-inline text-white">
+              <li class="list-inline-item pr-2">&copy; University of Exeter 2016</li>
+              <li class="list-inline-item pr-2">Anne Le Brocq </li>
+              <li class="list-inline-item pr-2">Development : <a href="http://www.inhousevisuals.com/">Inhouse Visuals</a></li>
+              <li class="list-inline-item"><a href="terms.html">Privacy Policy / Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+
     </div>
 
     <script type='text/javascript'>

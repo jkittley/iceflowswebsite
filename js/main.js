@@ -23,4 +23,11 @@ $(document).ready(function(){
     }
   });
 
+  $('.stop-youtube').click(function(){
+    console.log("Stop all videos");
+    $('.youtube-video').each(function(){
+      $(this).attr("src", $(this).attr("src"));
+    });
+  });
+
 });

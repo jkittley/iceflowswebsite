@@ -71,6 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 5px dashed #99ffff;
 }
 
+hr {
+  border-bottom: 5px solid #99ffff;
+
+}
+
 a.video-link p {
   font-family: 'PlaySir', sans-serif;
   font-size: 20px;
@@ -190,6 +195,7 @@ a.video-link p:hover {
     width: 0; 
     height: 0; 
     left: 25%;
+    bottom: -30px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid white;
