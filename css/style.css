@@ -149,10 +149,6 @@ a.video-link p:hover {
   /* max-height: 175px; */
 }
 
-.social-link {
-  color: #666;
-}
-
 .card-columns {
   column-count: 3;
 }
@@ -181,9 +177,61 @@ a.video-link p:hover {
   background-color: #90AFC5;
 }
 
+#chars .nav-link {
+  padding: 0;
+  margin: 0;
+}
+
 #chars .rounded-circle {
-  width: 90px;
-  border: 3px solid #142040;
+  width: 50px;
+  margin: 5px;
+  border: 2px solid #142040;
+}
+
+@media only screen and (min-width: 465px) {
+  #chars .rounded-circle {
+    width: 75px;
+    border: 3px solid #142040;
+  }
+}
+
+@media only screen and (min-width: 535px) {
+  #chars .rounded-circle {
+    width: 90px;
+    border: 3px solid #142040;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #chars .nav-link.active:after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 15%;
+    bottom: -30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
+    z-index: 999;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #chars .rounded-circle {
+    width: 65px;
+    border: 2px solid #142040;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #chars .rounded-circle {
+    width: 90px;
+    border: 3px solid #142040;
+  }
+  #chars .nav-link.active:after {
+    left: 20%;
+  }
 }
 
 #chars .nav-link.active {
@@ -195,20 +243,7 @@ a.video-link p:hover {
   border: 3px solid #fffc2f;
 }
 
-@media only screen and (min-width: 1200px) {
-  #chars .nav-link.active:after {
-    content: "";
-    position: absolute;
-    width: 0; 
-    height: 0; 
-    left: 25%;
-    bottom: -30px;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid white;
-    z-index: 999;
-  }
-}
+
 
 #chars a.active img {
   border: 3px solid #99ffff;
@@ -230,8 +265,6 @@ a.video-link p:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   font-family: "Font Awesome 5 Free";
@@ -246,3 +279,8 @@ a.video-link p:hover {
   color: #eee;
 }
   
+#social a {
+  font-family: 'PlaySir', sans-serif;
+  font-size: 20px;
+  color: #666;
+}
