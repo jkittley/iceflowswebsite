@@ -2,10 +2,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <title>Ice Flows - A game about ice flows in the Antarctic</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="In addition to being great fun to play, Ice Flows teaches players 
+    about the science behind ice flows in the Antarctic. The game was created by Anne Le Brocq at the 
+    University of Exeter and can be played online through any modern browse or by downloading the smartphone or tablet app.">
+    <meta name="author" content="Anne Le Brocq">
         
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
@@ -13,7 +18,7 @@
     <meta name="twitter:title" content="Ice Flows">
     <meta name="twitter:description" content="A game about ice flow in the Antarctic">
     <meta name="twitter:creator" content="@iceflowsgame">
-    <meta name="twitter:image" content="http://www.kittley.com/exnotes/images/twitter-card.png">
+    <meta name="twitter:image" content="http://www.iceflowsgame.com/images/twitter-card.png">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Ice Flows" />
@@ -44,17 +49,15 @@
     <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Ice Flows</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/jquery-video-lightning.min.js"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js"></script>
 
     <script>
@@ -130,8 +133,8 @@
       <img src="images/head.png" class="berg" alt="Ice Flows" />
       <div class="container text-center">
           <div class="video-modal-button">
-            <a href="#" class="video-link">
-            <div class="row justify-content-center p-4">
+            <a href="http://www.youtube.com/embed/x3d3GZNwXrE?rel=0&amp;autoplay=1" data-featherlight="iframe" data-featherlight-iframe-frameborder="0" data-featherlight-iframe-allow="autoplay; encrypted-media" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;">
+              <div class="row justify-content-center p-4">
               <div class="col-lg-auto ">
                 <div class="row">
                     <div class="col-lg-auto">
@@ -350,12 +353,13 @@
 
       <!-- Science -->
       <section id="scifi" class="text-center bg-light p-4 mb-0">
-        <div class="container pt-4 pb-4">
+        <div class="container py-4">
           <h1 class="pb-4"><i class="fas fa-flask"></i> Science</h1>
           <p class="lead mb-4">Ice Flows is based on science - but some elements are fiction in order to make the game fun to play. Here we separate the science from the fiction and give you some hints for answering some of the quiz questions in the game.</p>
           
           <div class="card mb-4">
             <div class="row">
+
               <div class="col-4 col-md-3 pr-0">
                 <div class="nav flex-column list-group list-group-flush" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <a href="#sci-a" aria-controls="sci-a" id="sci-a-tab" aria-selected="true"  data-toggle="pill" role="tab" class="stop-youtube list-group-item list-group-item-action active">The Game</a>
@@ -369,15 +373,26 @@
                   <a href="#sci-i" aria-controls="sci-i" id="sci-i-tab" aria-selected="false" data-toggle="pill" role="tab" class="stop-youtube list-group-item list-group-item-action border-bottom">Penguins</a>
                 </div>
               </div>
-              <div class="col-8 col-md-9 scifi-content border-left pl-0">
-                <div class="tab-content" id="v-pills-tabContent">
+
+              <div class="col-8 col-md-9 scifi-content border-left m-0 p-0">
+                <div class="tab-content pl-0 ml-0" id="v-pills-tabContent">
 
                   <!-- The Game -->
                   <div id="sci-a" aria-labelledby="sci-a-tab" role="tabpanel" class="tab-pane show active">
-                    <div class="container p-2">
-                      <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                        <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/x3d3GZNwXrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
+                    <div class="container-fluid">
+
+                      <a href="http://www.youtube.com/embed/x3d3GZNwXrE?rel=0&amp;autoplay=1" 
+                        data-featherlight="iframe" 
+                        data-featherlight-iframe-frameborder="0" 
+                        data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                        data-featherlight-iframe-allowfullscreen="true" 
+                        data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                        >
+                        <div class="img-youtube py-3">
+                        <img src="http://img.youtube.com/vi/x3d3GZNwXrE/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                        </div> 
+                      </a>
+     
                       <div class="row p-2">
                         <div class="col-lg-6">
                             <h4><i class="fas fa-flask"></i> Science</h4> 
@@ -401,10 +416,20 @@
 
                   <!-- Ice Sheets -->
                   <div id="sci-b" aria-labelledby="sci-b-tab" role="tabpanel" class="tab-pane">
-                    <div class="container p-2">
-                      <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                          <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/jI_TY1n7t_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
+                    <div class="container-fluid">
+                      
+                      <a href="http://www.youtube.com/embed/jI_TY1n7t_M?rel=0&amp;autoplay=1" 
+                        data-featherlight="iframe" 
+                        data-featherlight-iframe-frameborder="0" 
+                        data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                        data-featherlight-iframe-allowfullscreen="true" 
+                        data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                        >
+                        <div class="img-youtube py-3">
+                        <img src="http://img.youtube.com/vi/jI_TY1n7t_M/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                        </div> 
+                      </a>
+                      
                       <div class="row p-2">
                         <div class="col-lg-6">
                             <h4><i class="fas fa-flask"></i> Science</h4>                               
@@ -441,10 +466,20 @@
 
                    <!-- Ice Streams -->
                    <div id="sci-c" aria-labelledby="sci-c-tab" role="tabpanel" class="tab-pane">
-                      <div class="container p-2">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                          <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/jI_TY1n7t_M?rel=0&amp;start=151" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                      <div class="container-fluid">
+                      
+                          <a href="http://www.youtube.com/embed/jI_TY1n7t_M?rel=0&amp;start=151&amp;autoplay=1" 
+                            data-featherlight="iframe" 
+                            data-featherlight-iframe-frameborder="0" 
+                            data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                            data-featherlight-iframe-allowfullscreen="true" 
+                            data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                            >
+                            <div class="img-youtube py-3">
+                            <img src="http://img.youtube.com/vi/jI_TY1n7t_M/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                            </div> 
+                        </a>
+
                         <div class="row p-2">
                           <div class="col-lg-6">
                               <h4><i class="fas fa-flask"></i> Science</h4>
@@ -468,10 +503,19 @@
                                         
                     <!-- Ice Shelves -->
                     <div id="sci-d" aria-labelledby="sci-d-tab" role="tabpanel" class="tab-pane">
-                        <div class="container p-2">
-                          <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                            <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/q92iw71DaCQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
+                        <div class="container-fluid">
+                      
+                            <a href="http://www.youtube.com/embed/q92iw71DaCQ?rel=0&amp;autoplay=1" 
+                              data-featherlight="iframe" 
+                              data-featherlight-iframe-frameborder="0" 
+                              data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                              data-featherlight-iframe-allowfullscreen="true" 
+                              data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                              >
+                              <div class="img-youtube py-3">
+                              <img src="http://img.youtube.com/vi/q92iw71DaCQ/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                              </div> 
+                          </a>
                         
                           <div class="row p-2">
                             <div class="col-lg-6">
@@ -499,10 +543,21 @@
 
                     <!-- Icebergs -->
                     <div id="sci-e" aria-labelledby="sci-e-tab" role="tabpanel" class="tab-pane">
-                      <div class="container p-2">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                          <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/sAQH2qC5Fo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                      <div class="container-fluid">
+
+                        <a href="http://www.youtube.com/embed/sAQH2qC5Fo0?rel=0&amp;autoplay=1" 
+                            data-featherlight="iframe" 
+                            data-featherlight-iframe-frameborder="0" 
+                            data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                            data-featherlight-iframe-allowfullscreen="true" 
+                            data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                            >
+                            <div class="img-youtube py-3">
+                            <img src="http://img.youtube.com/vi/sAQH2qC5Fo0/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                            </div> 
+                        </a>
+
+                       
                         <div class="row p-2">
                           <div class="col-lg-6">
                             <h4><i class="fas fa-flask"></i> Science</h4> 
@@ -530,10 +585,20 @@
 
                   <!-- Climate Change -->
                   <div id="sci-f" aria-labelledby="sci-f-tab" role="tabpanel" class="tab-pane">
-                    <div class="container p-2">
-                      <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                        <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/bU0qmgykpU4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
+                      <div class="container-fluid">
+                      
+                          <a href="http://www.youtube.com/embed/bU0qmgykpU4?rel=0&amp;autoplay=1" 
+                            data-featherlight="iframe" 
+                            data-featherlight-iframe-frameborder="0" 
+                            data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                            data-featherlight-iframe-allowfullscreen="true" 
+                            data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                            >
+                            <div class="img-youtube py-3">
+                            <img src="http://img.youtube.com/vi/bU0qmgykpU4/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                            </div> 
+                      </a>
+
                       <div class="row p-2">                      
                         <div class="col-lg-6">
                             <h4><i class="fas fa-flask"></i> Science</h4> 
@@ -570,12 +635,21 @@
 
                   <!-- Sea Level -->
                   <div id="sci-g" aria-labelledby="sci-g-tab" role="tabpanel" class="tab-pane">
-                      <div class="container p-2">
-                          <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                              <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/bU0qmgykpU4?rel=0&amp;start=142" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                      <div class="container-fluid">
+
+                        <a href="http://www.youtube.com/embed/bU0qmgykpU4?rel=0&amp;start=142&amp;autoplay=1" 
+                          data-featherlight="iframe" 
+                          data-featherlight-iframe-frameborder="0" 
+                          data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                          data-featherlight-iframe-allowfullscreen="true" 
+                          data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                          >
+                          <div class="img-youtube py-3">
+                          <img src="http://img.youtube.com/vi/bU0qmgykpU4/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                          </div> 
+                      </a>
                           
-                        <div class="row p-2">
+                      <div class="row p-2">
                           <div class="col-lg-6">
                               <h4><i class="fas fa-flask"></i> Science</h4> 
                               <P>The entire Antarctic Ice Sheet contains enough water to raise sea level by 58 metres.  Much of this is in the larger “East Antarctic Ice Sheet”, where large parts of the bed are above sea level.  The West Antarctic Ice Sheet is a largely marine ice sheet, however, so is vulnerable to changes triggered by changes in ocean circulation.  If the West Antarctic Ice Sheet were to collapse it would raise sea level by about 3 metres.  One part of the ice sheet collapsing, could trigger another part by raising global sea level and causing extra flotation in other parts of the ice sheet.</P>
@@ -598,10 +672,19 @@
 
                   <!-- Ice Floes -->
                   <div id="sci-h" aria-labelledby="sci-h-tab" role="tabpanel" class="tab-pane">
-                      <div class="container p-2">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3 border-bottom">
-                          <iframe class="embed-responsive-item youtube-video" src="https://www.youtube.com/embed/x3d3GZNwXrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                      <div class="container-fluid">
+                        <a href="http://www.youtube.com/embed/x3d3GZNwXrE?rel=0&amp;autoplay=1" 
+                            data-featherlight="iframe" 
+                            data-featherlight-iframe-frameborder="0" 
+                            data-featherlight-iframe-allow="autoplay; encrypted-media" 
+                            data-featherlight-iframe-allowfullscreen="true" 
+                            data-featherlight-iframe-style="display:block;border:none;height:85vh;width:85vw;"
+                            >
+                            <div class="img-youtube py-3">
+                            <img src="http://img.youtube.com/vi/x3d3GZNwXrE/maxresdefault.jpg" class="img-fluid border-bottom" alt="The game video" />
+                            </div> 
+                        </a>
+
                         <div class="row p-2">
                           <div class="col-lg-6">
                               <h4><i class="fas fa-flask"></i> Science</h4> 
