@@ -8,4 +8,9 @@ $(document).ready(function(){
       }, 1000);
     }
   });
+
+  $('.dropdown-sci').click(function(e) {
+    $('.dropdown-sci-title').html($(this).html());
+  });
+
 });
