@@ -203,7 +203,7 @@ a.video-link p:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  #chars .nav-link.active:after {
+  #chars #pills-tab-top .nav-link.active:after {
     content: "";
     position: absolute;
     width: 0; 
@@ -213,6 +213,21 @@ a.video-link p:hover {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid white;
+    z-index: 999;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #chars #pills-tab-bottom .nav-link.active:after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 15%;
+    top: -30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid white;
     z-index: 999;
   }
 }

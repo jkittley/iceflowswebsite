@@ -13,4 +13,12 @@ $(document).ready(function(){
     $('.dropdown-sci-title').html($(this).html());
   });
 
+  // Manage the two chars lists
+  $('#chars #pills-tab-bottom .nav-link').click(function(e) {
+    $('#chars #pills-tab-top a').removeClass('active');
+  });
+  $('#chars #pills-tab-top .nav-link').click(function(e) {
+    $('#chars #pills-tab-bottom a').removeClass('active');
+  });
+
 });
