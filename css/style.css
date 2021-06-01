@@ -98,7 +98,11 @@ a.video-link p:hover {
 .scifi-content {
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: 600px;
+  max-height: 700px;
+}
+
+.dropdown-menu-sci {
+  overflow-y: auto;
 }
 
 .scifi-content p {
